@@ -44,6 +44,14 @@
           <mdb-list-group-item :action="true" :class="activeItem === 5 && 'active'"><mdb-icon icon="exclamation" class="mr-3"/>404</mdb-list-group-item>
         </router-link> -->
       </mdb-list-group>
+      <!-- <a href="https://github.com/sarahfawson"><mdb-icon fab icon="github" class="mr-2"/></a> -->
+      <p class="social">
+        <a href="https://www.instagram.com/thedatasays/" target="#_blank" data-animate-hover="pulse" class="instagram"><mdb-icon fab icon="instagram"></mdb-icon></a>
+        <a href="https://www.linkedin.com/in/sarahfawson/" target="#_blank" data-animate-hover="pulse" class="linkedin"><mdb-icon fab icon="linkedin"></mdb-icon></a>
+        <a href="https://twitter.com/SarahFawson" target="#_blank" data-animate-hover="pulse" class="twitter"><mdb-icon fab icon="twitter"></mdb-icon></a>
+        <a href="https://github.com/sarahfawson" target="#_blank" data-animate-hover="pulse" class="github"><mdb-icon fab icon="github"></mdb-icon></a>
+        <!-- <a href="mailto:sarahelizabethfawson@gmail.com" data-animate-hover="pulse" class="email"><mdb-icon fab icon="envelope"></mdb-icon></a> -->
+      </p>
     </div>
     <!-- /Sidebar  -->
     <main>
@@ -54,8 +62,8 @@
         <hr class="my4"/>
         <div class="pb-4">
           <a href="https://www.instagram.com/thedatasays/" target="_blank"><mdb-icon fab icon="instagram" class="mr-3" /></a>
-          <!-- <a href="https://twitter.com/SarahFawson" target="_blank"><mdb-icon fab icon="twitter" class="mr-3"/></a> -->
           <a href="https://www.linkedin.com/in/sarahfawson/" target="_blank"><mdb-icon fab icon="linkedin" class="mr-3"/></a>
+          <a href="https://twitter.com/SarahFawson" target="_blank"><mdb-icon fab icon="twitter" class="mr-3"/></a>
           <a href="https://github.com/sarahfawson" target="_blank"><mdb-icon fab icon="github" class="mr-3"/></a>
         </div>
         <p class="footer-copyright mb-0 py-3 text-center">
@@ -121,14 +129,38 @@ body {
   margin: 0px;
 }
 
-.ftr {
+/* .ftr {
   background-color: #253746;
   color: #fff;
-}
+} */
 
 .footerDark {
   background-color: #253746;
   color: #fff;
+}
+
+p.social a {
+  margin: 0 0.625rem 0.625rem 0;
+  color: #fff;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  line-height: 2.5rem;
+  font-size: 0.9375rem;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  vertical-align: bottom;
+  border: solid 1px #999;
+  color: #999;
+  transition: all 0.3s;
+  margin-top: 2rem;
+}
+
+a {
+  color: #f115a8;
+  text-decoration: none;
 }
 
 .list-group-item.active {
