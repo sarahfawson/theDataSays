@@ -25,7 +25,7 @@
       <span class="whitespace"></span>
       <span id="bio" class="bio">
         <h4><strong>The Data Says</strong></h4>
-        <p>Custom data visualizations on politics, civil rights, and topics that promote social justice.</p>
+        <p>Original data visualizations on politics, civil rights, and topics that promote social justice.</p>
       </span>
       <mdb-list-group class="list-group-flush">
         <router-link to="/dashboard" @click.native="activeItem = 1">

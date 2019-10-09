@@ -28,6 +28,33 @@
               <mdb-col lg="4" class="mb-3">
                 <mdb-card cascade narrow class="d-flex mb-3">
                   <mdb-view>
+                    <img src="../assets/img/toughOnCrime2.jpg" alt="sentiment Analysis" class="img-fluid"/>
+                    <mdb-mask overlay="white-slight" waves/>
+                  </mdb-view>
+                  <mdb-card-body>
+                    <mdb-card-title class="font-bold mb-3">
+                      <a href="/profile#civilRights"><strong>Civil Rights</strong></a>
+                    </mdb-card-title>
+                    <mdb-card-text>Stats on the criminal justice system in America.</mdb-card-text>
+                  </mdb-card-body>
+                </mdb-card>
+              </mdb-col>
+              <mdb-col lg="4" class="mb-3">
+                <mdb-card cascade narrow class="d-flex mb-3">
+                  <mdb-view>
+                    <img src="../assets/img/t1dAutoimmune.jpg" alt="Project" class="img-fluid"/>
+                  </mdb-view>
+                  <mdb-card-body>
+                    <mdb-card-title class="font-bold mb-3">
+                      <a href="/profile#t1d"><strong>Healthcare</strong></a>
+                    </mdb-card-title>
+                    <mdb-card-text>Type 1 Diabetes & more to come.</mdb-card-text>
+                  </mdb-card-body>
+                </mdb-card>
+              </mdb-col>
+              <mdb-col lg="4" class="mb-3">
+                <mdb-card cascade narrow class="d-flex mb-3">
+                  <mdb-view>
                     <img src="../assets/img/vaderScore.png" alt="sentiment Analysis" class="img-fluid"/>
                     <mdb-mask overlay="white-slight" waves/>
                   </mdb-view>
@@ -48,6 +75,20 @@
                   <mdb-card-body>
                     <mdb-card-title class="font-bold mb-3">
                       <a href="/profile#personalDataViz"><strong>Illustrated Data</strong></a>
+                    </mdb-card-title>
+                    <mdb-card-text>Some personal projects.</mdb-card-text>
+                  </mdb-card-body>
+                </mdb-card>
+              </mdb-col>
+              <mdb-col lg="4" class="mb-3">
+                <mdb-card cascade narrow class="d-flex mb-2">
+                  <mdb-view>
+                    <img src="../assets/img/cdcHealthRadar.gif" alt="Project3" class="img-fluid"/>
+                    <mdb-mask overlay="white-slight" waves/>
+                  </mdb-view>
+                  <mdb-card-body>
+                    <mdb-card-title class="font-bold mb-3">
+                      <a href="/profile#socialDeterminantsOfHealth"><strong>Social Determinants of Health</strong></a>
                     </mdb-card-title>
                     <mdb-card-text>Some personal projects.</mdb-card-text>
                   </mdb-card-body>

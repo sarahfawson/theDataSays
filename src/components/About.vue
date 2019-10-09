@@ -1,14 +1,39 @@
 <template>
   <section id="about">
-    <mdb-card class="mb-4">
-      <mdb-card-body class="d-sm-flex justify-content-between">
-        <h4 class="mb-sm-0 pt-2">
-          About
-        </h4>
-        <p>Thanks for stopping by</p>
-      </mdb-card-body>
-    </mdb-card>
     <mdb-row>
+      <mdb-col md="12">
+        <mdb-card cascade narrow class="mt-5">
+          <!-- <mdb-view class="gradient-card-header blue darken-2">
+            <h4 class="h4-responsive text-white">Bio</h4>
+          </mdb-view> -->
+          <mdb-card-body>
+            <mdb-card-title class="font-bold mb-3">
+              <h3><strong>Hello There!</strong></h3>
+            </mdb-card-title>
+            <p>Thanks for stopping by. Let me tell you a bit about myself.</p>
+            <p> I'm passionate about visualizing data and creating great user experiences. Currently I am achieving these things through data analysis and visualization, illustration, web development, and a genuine curiosity and eagerness with whoever I am working with. I am also getting my Master's at MICA in Information Visualization to expand my data storytelling capability further.
+            <br><br>
+              I received a BS in Supply Chain Management from the University of Oklahoma, then moved to Kansas to work for a chemical company, managing a complex industrial 
+              global supply chain. This experience helped me build a robust set of skills around decomposing complex systems, 
+              extracting the information that is useful in those systems, and using it to achieve optimal results. 
+              Next, I took on a role at a comminications and marketing agency as a data analyst and an operations manager where I built 
+              comprehensive operations and financial data visualization dashboards, advised on business operations strategy, and project managed the launch 
+              of the company onto a enterprise project management and time management software. Now, I am working as a data visualization specialist
+              and front-end web developer at Booz Allen Hamilton, where I specialize within vue.js (HTML/CSS/JS), figma, tableau, user experience research, and design.
+              <br/><br/>After work, I am in class at MICA, pursuing my Master's in Information Visualization. 
+              I'm SO excited to dig deeper into data visualization with the tools, design knowledge and languages I've been 
+              learning so I can become a more effective visual communicator.
+              <br/><br/>When I'm not working or coding, I'm usually illustrating, rock climbing with my husband, or playing with my adorable dog
+              <a
+                target="#_blank" 
+                href="https://www.instagram.com/pablo_thoughts/"
+                class="card-link">Pablo</a>.
+            </p>
+          </mdb-card-body>
+        </mdb-card>
+      </mdb-col>
+    </mdb-row>
+    <!-- <mdb-row>
       <mdb-col md="12">
         <mdb-card cascade narrow class="mt-5">
           <mdb-view class="gradient-card-header blue darken-2">
@@ -54,12 +79,12 @@
           </mdb-card-body>
         </mdb-card>
       </mdb-col>
-    </mdb-row>
+    </mdb-row> -->
   </section>
 </template>
 
 <script>
-import { mdbRow, mdbCol, mdbCard, mdbView, mdbCardBody, mdbTbl } from 'mdbvue'
+import { mdbRow, mdbCol, mdbCard, mdbView, mdbCardBody, mdbCardTitle } from 'mdbvue'
 
 export default {
   name: 'About',
@@ -69,7 +94,7 @@ export default {
     mdbCard,
     mdbView,
     mdbCardBody,
-    mdbTbl
+    mdbCardTitle
   },
   data () {
     return {}
