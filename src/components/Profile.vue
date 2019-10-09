@@ -1,29 +1,6 @@
 <template>
   <section id="profile">
     <mdb-row>
-      <mdb-col md="3">
-        <mdb-card cascade narrow>
-          <mdb-view>
-            <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20%283%29.jpg" alt="Project" class="img-fluid"/>
-            <mdb-mask overlay="white-slight" waves/>
-          </mdb-view>
-          <mdb-card-body class="text-center">
-            <mdb-card-title class="font-bold mb-2">
-              <strong>Alice Mayer</strong>
-            </mdb-card-title>
-            <h5 class="indigo-text">
-              <strong>Photographer</strong>
-            </h5>
-            <h6 class="text-justify">
-              <strong>About:</strong>
-            </h6>
-            <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione perferendis quod animi dignissimos consectetur quibusdam numquam laboriosam, minus, provident...</p>
-            <div class="text-right">
-              <mdb-btn outline="primary" rounded size="sm">More...</mdb-btn>
-            </div>
-          </mdb-card-body>
-        </mdb-card>
-      </mdb-col>
       <mdb-col md="9">
         <section class="text-center pb-3">
           <mdb-row class="d-flex justify-content-center">

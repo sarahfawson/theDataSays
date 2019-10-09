@@ -21,35 +21,36 @@
     <!--/.Navbar-->
     <!-- Sidebar -->
     <div class="sidebar-fixed position-fixed">
-      <a class="logo-wrapper"><img alt="" class="img-fluid" src="./assets/logo-mdb-vue-small.png"/></a>
+      <!-- <a class="logo-wrapper"><img alt="" class="img-fluid" src="./assets/logo-mdb-vue-small.png"/></a> -->
+      <span class="whitespace"></span>
+      <span id="name">
+        <h4><strong>The Data Says</strong></h4>
+        <p>Custom data visualizations on politics, civil rights, and topics that promote social justice.</p>
+      </span>
       <mdb-list-group class="list-group-flush">
         <router-link to="/dashboard" @click.native="activeItem = 1">
-          <mdb-list-group-item :action="true" :class="activeItem === 1 && 'active'"><mdb-icon icon="chart-pie" class="mr-3"/>Dashboard</mdb-list-group-item>
+          <mdb-list-group-item :action="true" :class="activeItem === 1 && 'active'">Dashboard</mdb-list-group-item>
         </router-link>
         <router-link to="/profile" @click.native="activeItem = 2">
-          <mdb-list-group-item :action="true" :class="activeItem === 2 && 'active'"><mdb-icon icon="user" class="mr-3"/>Profile</mdb-list-group-item>
+          <mdb-list-group-item :action="true" :class="activeItem === 2 && 'active'">Profile</mdb-list-group-item>
         </router-link>
         <router-link to="/about"  @click.native="activeItem = 3">
-          <mdb-list-group-item :action="true" :class="activeItem === 3 && 'active'"><mdb-icon icon="table" class="mr-3"/>About</mdb-list-group-item>
+          <mdb-list-group-item :action="true" :class="activeItem === 3 && 'active'">About</mdb-list-group-item>
         </router-link>
         <!-- <router-link to="/maps" @click.native="activeItem = 4">
           <mdb-list-group-item :action="true" :class="activeItem === 4 && 'active'"><mdb-icon icon="map" class="mr-3"/>Maps</mdb-list-group-item>
         </router-link> -->
-        <router-link to="/404" @click.native="activeItem = 5">
+        <!-- <router-link to="/404" @click.native="activeItem = 5">
           <mdb-list-group-item :action="true" :class="activeItem === 5 && 'active'"><mdb-icon icon="exclamation" class="mr-3"/>404</mdb-list-group-item>
-        </router-link>
+        </router-link> -->
       </mdb-list-group>
     </div>
     <!-- /Sidebar  -->
     <main>
-      <div class="mt-5 p-5">
+      <div class="p-5">
         <router-view></router-view>
       </div>
-      <ftr color="primary-color-dark" class="text-center font-small darken-2">
-        <div class="pt-4">
-          <mdb-btn outline="white" tag="a" href="https://mdbootstrap.com/docs/vue/getting-started/download/" target="_blank">Download MDB <mdb-icon icon="download" class="ml-2"/></mdb-btn>
-          <mdb-btn outline="white" tag="a" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Start free tutorial <mdb-icon icon="graduation-cap" class="ml-2"/></mdb-btn>
-        </div>
+      <ftr class="text-center font-small darken-2 footerDark">
         <hr class="my4"/>
         <div class="pb-4">
           <a href="https://www.instagram.com/thedatasays/" target="_blank"><mdb-icon fab icon="instagram" class="mr-3" /></a>
@@ -103,17 +104,40 @@ export default {
 <style scoped>
 main {
   background-color: rgb(240, 240, 240);
+  margin: 0px;
 }
+
+body {
+  margin: 0px;
+}
+
+/* b, strong {
+  font-weight: bolder;
+} */
 
 .flexible-content {
   transition: padding-left 0.3s;
   padding-left: 270px;
+  margin: 0px;
 }
 
-/* .flexible-navbar {
-  transition: padding-left 0.5s;
-  padding-left: 270px;
-} */
+.ftr {
+  background-color: #253746;
+  color: #fff;
+}
+
+.footerDark {
+  background-color: #253746;
+  color: #fff;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: hotpink;
+  border-color: hotpink;
+  border-radius: 0px;
+}
 
 .sidebar-fixed {
   left: 0;
@@ -139,7 +163,10 @@ main {
 
 .sidebar-fixed .list-group .active {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  border-radius: 5px;
+}
+
+.whitespace {
+  margin: 30px;
 }
 
 @media (max-width: 1199.98px) {
@@ -148,9 +175,6 @@ main {
   }
   .flexible-content {
     padding-left: 0;
-  }
-  .flexible-navbar {
-    padding-left: 10px;
   }
 }
 </style>

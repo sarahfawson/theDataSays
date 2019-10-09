@@ -1,5 +1,13 @@
 <template>
   <section id="about">
+    <mdb-card class="mb-4">
+      <mdb-card-body class="d-sm-flex justify-content-between">
+        <h4 class="mb-sm-0 pt-2">
+          About
+        </h4>
+        <p>Thanks for stopping by</p>
+      </mdb-card-body>
+    </mdb-card>
     <mdb-row>
       <mdb-col md="12">
         <mdb-card cascade narrow class="mt-5">
