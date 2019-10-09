@@ -1,16 +1,12 @@
 <template>
   <section id="dashboard">
-    <mdb-card class="mb-4">
+    <!-- <mdb-card class="mb-4">
       <mdb-card-body class="d-sm-flex justify-content-between">
         <h4 class="mb-sm-0 pt-2">
           Welcome!
         </h4>
-        <!-- <form class="d-flex md-form justify-content-center" style="margin:0;">
-          <input aria-label="Search" class="form-control" placeholder="Type your query" type="search" />
-          <mdb-btn color="primary" size="sm" class="my-0" type="submit"><i class="fa fa-search"></i></mdb-btn>
-        </form> -->
       </mdb-card-body>
-    </mdb-card>
+    </mdb-card> -->
     <section>
       <mdb-row>
         <mdb-col md="9">
@@ -19,7 +15,34 @@
               <mdb-col lg="4" class="mb-3">
                 <mdb-card cascade narrow class="d-flex mb-3">
                   <mdb-view>
-                    <!-- <img src="../assets/portfolio/demdebate3issues.jpg" alt="Project" class="img-fluid"/> -->
+                    <img src="../assets/img/demdebate3issues.jpg" alt="Project" class="img-fluid"/>
+                  </mdb-view>
+                  <mdb-card-body>
+                    <mdb-card-title class="font-bold mb-3">
+                      <a href="/profile#personalDataViz"><strong>2020 Presidential Race</strong></a>
+                    </mdb-card-title>
+                    <mdb-card-text>Analyzed & Illustrated facts & figures surrounding the 2020 US Presidential race.</mdb-card-text>
+                  </mdb-card-body>
+                </mdb-card>
+              </mdb-col>
+              <mdb-col lg="4" class="mb-3">
+                <mdb-card cascade narrow class="d-flex mb-3">
+                  <mdb-view>
+                    <img src="../assets/img/vaderScore.png" alt="sentiment Analysis" class="img-fluid"/>
+                    <mdb-mask overlay="white-slight" waves/>
+                  </mdb-view>
+                  <mdb-card-body>
+                    <mdb-card-title class="font-bold mb-3">
+                      <a href="/profile#sentimentAnalysis"><strong>Sentiment Analysis</strong></a>
+                    </mdb-card-title>
+                    <mdb-card-text>NLP analysis on Russian Troll tweets used during the 2016 US Presidential Election</mdb-card-text>
+                  </mdb-card-body>
+                </mdb-card>
+              </mdb-col>
+              <mdb-col lg="4" class="mb-3">
+                <mdb-card cascade narrow class="d-flex mb-2">
+                  <mdb-view>
+                    <img src="../assets/img/3yearAnniversaryInfographic.jpg" alt="Project3" class="img-fluid"/>
                     <mdb-mask overlay="white-slight" waves/>
                   </mdb-view>
                   <mdb-card-body>
@@ -27,34 +50,6 @@
                       <a href="/profile#personalDataViz"><strong>Illustrated Data</strong></a>
                     </mdb-card-title>
                     <mdb-card-text>Some personal projects.</mdb-card-text>
-                  </mdb-card-body>
-                </mdb-card>
-              </mdb-col>
-              <mdb-col lg="4" class="mb-3">
-                <mdb-card cascade narrow class="d-flex mb-3">
-                  <mdb-view>
-                    <img src="/../assets/porfolio/vader-score.PNG" alt="Project2" class="img-fluid"/>
-                    <mdb-mask overlay="white-slight" waves/>
-                  </mdb-view>
-                  <mdb-card-body>
-                    <mdb-card-title class="font-bold mb-3">
-                      <strong>Project name</strong>
-                    </mdb-card-title>
-                    <mdb-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
-                  </mdb-card-body>
-                </mdb-card>
-              </mdb-col>
-              <mdb-col lg="4" class="mb-3">
-                <mdb-card cascade narrow class="d-flex mb-2">
-                  <mdb-view>
-                    <!-- <img src="../assets/porfolio/3yearAnniversaryInfographic.jpg" alt="Project3" class="img-fluid"/> -->
-                    <mdb-mask overlay="white-slight" waves/>
-                  </mdb-view>
-                  <mdb-card-body>
-                    <mdb-card-title class="font-bold mb-3">
-                      <strong>Project name</strong>
-                    </mdb-card-title>
-                    <mdb-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
                   </mdb-card-body>
                 </mdb-card>
               </mdb-col>

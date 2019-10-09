@@ -23,7 +23,7 @@
     <div class="sidebar-fixed position-fixed">
       <!-- <a class="logo-wrapper"><img alt="" class="img-fluid" src="./assets/logo-mdb-vue-small.png"/></a> -->
       <span class="whitespace"></span>
-      <span id="name">
+      <span id="bio" class="bio">
         <h4><strong>The Data Says</strong></h4>
         <p>Custom data visualizations on politics, civil rights, and topics that promote social justice.</p>
       </span>
@@ -151,10 +151,10 @@ body {
   padding-top: 0;
 }
 
-.sidebar-fixed .logo-wrapper img{
+/* .sidebar-fixed .logo-wrapper img{
   width: 100%;
   padding: 2.5rem;
-}
+} */
 
 .sidebar-fixed .list-group-item {
   display: block !important;
@@ -177,6 +177,11 @@ body {
     padding-left: 0;
   }
 }
+
+.bio {
+  padding: 1.5rem !important;
+}
+
 </style>
 <style>
 /* .navbar-light .navbar-brand {
