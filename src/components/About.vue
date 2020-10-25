@@ -3,30 +3,23 @@
     <mdb-row>
       <mdb-col md="12">
         <mdb-card cascade narrow class="mt-5">
-          <!-- <mdb-view class="gradient-card-header blue darken-2">
-            <h4 class="h4-responsive text-white">Bio</h4>
-          </mdb-view> -->
           <mdb-card-body>
-            <mdb-card-title class="font-bold mb-3">
-              <h3><strong>Hello There!</strong></h3>
-            </mdb-card-title>
             <mdb-row>
               <mdb-col md="8">
-                <mdb-card-text>
-                  <p>Thanks for stopping by. Let me tell you a bit about myself.</p>
-                  <p> I'm passionate about visualizing data and creating great user experiences. 
-                    Currently I am achieving these things through data analysis and visualization, illustration, web development, and a genuine curiosity and eagerness with whoever I am working with. 
-                    I am also getting my Master's at MICA in Information Visualization to expand my data storytelling capability further.
-                    <br/><br/>When I'm not working or coding, I'm usually illustrating, rock climbing with my husband, or playing with my adorable dog
-                    <a
-                      target="#_blank" 
-                      href="https://www.instagram.com/pablo_thoughts/"
-                      class="card-link">Pablo</a>.
-                  </p>
-                </mdb-card-text>
+            <mdb-card-title class="font-bold mb-3">
+              <h3><strong>Hello there!</strong></h3>
+            </mdb-card-title>
+            <p> I'm Sarah, a visual analyst and illustrator based in Denver, Colorado.
+                I am getting my Master's at MICA in Information Visualization to expand my data storytelling capability further.
+                <br><br>When I'm not working or coding, I'm usually illustrating, hiking with my husband, or playing with my adorable dog
+                <a
+                  target="#_blank"
+                  href="https://www.instagram.com/pablo_thoughts/"
+                  class="card-link">Pablo</a>.
+              </p>
               </mdb-col>
               <mdb-col md="4">
-                <img src="../assets/purplePortrait.jpg" class="rounded-circle img-fluid portrait">
+                <img src="../assets/purplePortrait.jpg" width="250rem" class="rounded-circle img-fluid portrait">
               </mdb-col>
             </mdb-row>
           </mdb-card-body>
@@ -84,7 +77,7 @@
 </template>
 
 <script>
-import { mdbRow, mdbCol, mdbCard, mdbView, mdbCardBody, mdbCardTitle } from 'mdbvue'
+import { mdbRow, mdbCol, mdbCard, mdbCardBody, mdbCardTitle } from 'mdbvue'
 
 export default {
   name: 'About',
@@ -92,7 +85,6 @@ export default {
     mdbRow,
     mdbCol,
     mdbCard,
-    mdbView,
     mdbCardBody,
     mdbCardTitle
   },
