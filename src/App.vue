@@ -2,7 +2,7 @@
   <div class="flexible-content">
     <!--Navbar-->
     <mdb-navbar class="flexible-navbar white" light position="top" scrolling>
-      <a><mdb-navbar-brand href="#" target="_blank">TheDataSays</mdb-navbar-brand></a>
+      <mdb-navbar-brand href="#" target="_blank">TheDataSays</mdb-navbar-brand>
       <mdb-navbar-toggler>
         <mdb-navbar-nav left>
           <!-- <mdb-nav-item to="/" waves-fixed active class="active">Home</mdb-nav-item> -->
@@ -85,6 +85,7 @@
 import { mdbContainer, mdbNavbar, mdbNavbarBrand, mdbNavItem, mdbNavbarNav, mdbNavbarToggler, mdbBtn, mdbIcon, mdbListGroup, mdbListGroupItem, mdbCardBody, mdbFooter, waves } from 'mdbvue'
 import Dashboard from './components/Dashboard'
 import projects from './components/projects'
+// @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap')
 
 export default {
   name: 'App',
@@ -120,6 +121,7 @@ export default {
 main {
   background-color: rgb(240, 240, 240);
   margin: 0px;
+  min-height: 100vh;
 }
 
 body {

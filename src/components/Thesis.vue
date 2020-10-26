@@ -17,8 +17,18 @@
       <mdb-col md="1" class="mb-3"></mdb-col>
       <mdb-col md="10" class="mb-3">
         <h3>International Rates of Incarceration</h3>
-        <p class="chartSubhead">Description here</p>
-        <div id="barChart"></div>
+        <p class="chartSubhead">The U.S. has been on top of the list for X years.</p>
+        <!-- <div id="barChart"></div> -->
+        <div class="Thesis">
+          <BarChart
+            class="chart"
+            :data-set="incarcerationRates"
+            :margin-left="50"
+            :margin-top="40"
+            :tick-count="5"
+            :bar-padding="0.5"
+          />
+        </div>
         <p class="bodyText">lorem ipsum dolor sin amet </p>
       </mdb-col>
       <mdb-col md="1" class="mb-3"></mdb-col>
@@ -45,11 +55,13 @@
       </mdb-col>
       <mdb-col md="1" class="mb-3"></mdb-col>
     </mdb-row>
+
   </section>
 </template>
 
 <script>
 import { mdbRow, mdbCol, mdbView, mdbMask, mdbIcon, mdbBtn } from 'mdbvue'
+import BarChart from './BarChart'
 
 export default {
   name: 'Thesis',
@@ -59,32 +71,33 @@ export default {
     mdbView,
     mdbMask,
     mdbIcon,
-    mdbBtn
+    mdbBtn,
+    BarChart
   },
   data () {
     return {
+      incarcerationRates: [
+        ['USA', 639],
+        ['El Salvado', 566],
+        ['Turkmenistan', 552],
+        ['Thailand', 549],
+        ['Palau', 522],
+        ['Rwanda', 511],
+        ['Cuba', 510],
+        ['Maldives', 499],
+        ['Northern Mariana Islands', 482],
+        ['Virgin Islands (UK)', 447],
+        ['Bahamas', 442],
+        ['Grenada', 429],
+        ['Panama', 412],
+        ['Guam', 411]
+      ],
       dropdownOptions: [
         {state: 'Alabama', value: 20.5},
-        {country: 'China', value: 13.4},
-        {country: 'Germany', value: 4.0},
-        {country: 'Japan', value: 4.9},
-        {country: 'France', value: 2.8}
-      ],
-      incarcerationRate: [
-        {label: 'USA', value: 639},
-        {label: 'El Salvador', value: 566},
-        {label: 'Turkmenistan', value: 552},
-        {label: 'Thailand', value: 549},
-        {label: 'Palau', value: 522},
-        {label: 'Rwanda', value: 511},
-        {label: 'Cuba', value: 510},
-        {label: 'Maldives', value: 499},
-        {label: 'Northern Mariana Islands', value: 482},
-        {label: 'Virgin Islands (UK)', value: 447},
-        {label: 'Bahamas', value: 442},
-        {label: 'Grenada', value: 429},
-        {label: 'Panama', value: 412},
-        {label: 'Guam', value: 411}
+        {country: 'Alaska', value: 13.4},
+        {country: 'Colorado', value: 4.0},
+        {country: 'Oklahoma', value: 4.9},
+        {country: 'Texas', value: 2.8}
       ]
     }
   }
@@ -92,6 +105,21 @@ export default {
 </script>
 
 <style scoped>
+.chart {
+  margin: 40px auto 0;
+  display: block;
+}
+
+.chartSubhead {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 200;
+  font-size: .90rem;
+  color: gray;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 .projects-card-footer {
   background-color: #F7F7F7 !important;
   padding: 1.25rem;

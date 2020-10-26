@@ -2,13 +2,13 @@
   <section id="bad-gateway">
     <div class="full">
       <mdb-row class="bad-gateway-row">
-        <mdb-col md="8">
-          <!-- <img alt="Error 404" class="img-fluid" hieght="20px" src="../assets/logo-mdb-vue-small.png"/> -->
+        <!-- <mdb-col md="8">
           <h2 class="h2-responsive mt-3 mb-2">Uh-oh!</h2>
           <p>The requested URL was not found.</p>
-        </mdb-col>
-        <mdb-col md="4">
-          <img alt="Error 404" class="img-fluid" src="https://mdbootstrap.com/img/Others/grafika404-bf.png"/>
+        </mdb-col> -->
+        <mdb-col md="12">
+          <img style="width: 50vh; height: 50vh;" src="https://media.giphy.com/media/3o6ZsWGKdgltHneCBi/giphy.gif" alt="WTF - page not found">
+          <!-- <img alt="Error 404" class="img-fluid" src="https://mdbootstrap.com/img/Others/grafika404-bf.png"/> -->
         </mdb-col>
       </mdb-row>
     </div>

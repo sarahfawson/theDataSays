@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "bootstrap-css-only": "^4.3.1",
+    "d3-scale": "^3.2.3",
     "mdbvue": "^5.4.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6",
